@@ -11,7 +11,8 @@
 </head>
 <body>
 <div id="container">
-    <h1>Here you go!</h1>
+    <h1><%= drinkName %></h1>
+    <img src="<%= drinkThumb %>" alt="<%= drinkName %>" height="256">
     <form action="/submit" method="post">
         <button name="submit">Another!</button>
     </form>
