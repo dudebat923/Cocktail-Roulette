@@ -1,3 +1,5 @@
+// Free Cocktail API: https://www.thecocktaildb.com/api.php
+
 import express from "express";
 import axios from 'axios'
 
@@ -18,7 +20,7 @@ app.post("/submit", async (req, res) => {
             drinkThumb: drink.strDrinkThumb
         });
     } catch (error) {
-        res.render("cocktail.ejs", {drinkName: 'Failed to generate a cocktail'});
+        res.render("cocktail.ejs");
     }
     res.render("cocktail.ejs");
 })

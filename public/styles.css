@@ -35,6 +35,7 @@ button {
     color: #eaeaea;
     font-size: 1.5rem;
     font-family: "Playfair Display", serif;
+    margin: 1rem;
 }
 
 button:hover {

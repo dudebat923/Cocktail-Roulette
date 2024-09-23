@@ -11,11 +11,18 @@
 </head>
 <body>
 <div id="container">
+    <% if (locals.drinkName) { %>
     <h1><%= drinkName %></h1>
     <img src="<%= drinkThumb %>" alt="<%= drinkName %>" height="256">
     <form action="/submit" method="post">
         <button name="submit">Another!</button>
     </form>
+        <% } else { %>
+        <h1>Failed to generate a cocktail 😞</h1>
+            <form action="/submit" method="post">
+                <button name="submit">Try Again</button>
+            </form>
+        <% } %>
 </div>
 
 <%- include("footer.ejs") %>
