@@ -11,9 +11,20 @@
 </head>
 <body>
 <div id="container">
-    <% if (locals.drinkName) { %>
-    <h1><%= drinkName %></h1>
-    <img src="<%= drinkThumb %>" alt="<%= drinkName %>" height="256">
+    <% if (locals.cocktail) { %>
+    <h1><%= cocktail.strDrink %></h1>
+    <img src="<%= cocktail.strDrinkThumb %>" alt="<%= cocktail.strDrink %>" height="256">
+    <div id="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+            <% for (let i = 0; i < 15; i++) { %>
+                <% if (ingredients[i] != null) { %>
+                    <li><%= ingredients[i] %></li>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
+    <p><%= cocktail.strInstructions %></p>
     <form action="/submit" method="post">
         <button name="submit">Another!</button>
     </form>
