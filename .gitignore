@@ -1,2 +1,4 @@
 node_modules/
 "External Libraries/"
+.env
+.idea
