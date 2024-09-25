@@ -1,11 +1,19 @@
+:root {
+    --font-primary: "Playfair Display";
+    --color-primary: #1e1f22;
+    --color-secondary: #2b2d30;
+    --color-accent: #41367c;
+    --color-text-primary: #eaeaea;
+}
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     position: relative;
-    background: #1e1f22;
-    color: #eaeaea;
-    font-family: "Playfair Display", serif;
+    background: var(--color-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-primary), serif;
 }
 
 h1 {
@@ -55,10 +63,10 @@ button {
     border: none;
     padding: 10px;
     border-radius: 10px;
-    background: #41367c;
-    color: #eaeaea;
+    background: var(--color-accent);
+    color: var(--color-text-primary);
     font-size: 1.5rem;
-    font-family: "Playfair Display", serif;
+    font-family: var(--font-primary), serif;
     margin: 2rem;
 }
 
