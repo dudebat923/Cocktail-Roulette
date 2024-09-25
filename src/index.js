@@ -38,7 +38,6 @@ app.post("/submit", async (req, res) => {
     } catch (error) {
         res.render("cocktail.ejs");
     }
-    res.render("cocktail.ejs");
 })
 
 app.listen(port, () => {
