@@ -1,10 +1,12 @@
 // Free Cocktail API: https://www.thecocktaildb.com/api.php
 
+import dotenv from "dotenv";
 import express from "express";
 import axios from 'axios'
 
+dotenv.config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
