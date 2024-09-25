@@ -7,12 +7,12 @@
 }
 
 html, body {
-    height: 100lvh;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background: var(--color-primary);
     color: var(--color-text-primary);
     font-family: var(--font-primary), serif;
